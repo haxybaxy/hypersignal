@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hacker News: Front Page</title>
+  <link rel="alternate" href="https://news.ycombinator.com/"/>
+  <link rel="self" href="https://hnrss.org/frontpage"/>
+  <updated>2026-09-06T15:00:00Z</updated>
+  <entry>
+    <id>https://news.ycombinator.com/item?id=1</id>
+    <title>Show HN: A panel for spotting business ideas</title>
+    <link rel="alternate" href="https://example.test/hypersignal"/>
+    <updated>2026-09-06T14:00:00Z</updated>
+    <author><name>haxybaxy</name></author>
+    <content type="html">&lt;p&gt;Article URL: &lt;a href="https://example.test/hypersignal"&gt;https://example.test/hypersignal&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Points: 120&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <id>https://news.ycombinator.com/item?id=2</id>
+    <title>Ask HN: What are you working on?</title>
+    <link rel="alternate" href="https://news.ycombinator.com/item?id=2"/>
+    <updated>2026-09-06T10:00:00Z</updated>
+    <summary>Discussion thread.</summary>
+  </entry>
+</feed>

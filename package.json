@@ -1,0 +1,27 @@
+{
+  "name": "hypersignal",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"pnpm run dev:api\" \"pnpm run dev:web\"",
+    "dev:web": "pnpm --filter web dev",
+    "dev:api": "uv run --project apps/api uvicorn hypersignal_api.main:app --reload --reload-dir apps/api/src --port 8000",
+    "lint": "pnpm run lint:web && pnpm run lint:api",
+    "lint:web": "pnpm --filter web lint",
+    "lint:api": "uv run --directory apps/api ruff check . && uv run --directory apps/api ruff format --check .",
+    "fmt": "pnpm --filter web format && uv run --directory apps/api ruff format . && uv run --directory apps/api ruff check --fix .",
+    "typecheck": "pnpm run typecheck:web && pnpm run typecheck:api",
+    "typecheck:web": "pnpm --filter web typecheck",
+    "typecheck:api": "uv run --directory apps/api mypy src tests",
+    "test": "pnpm run test:web && pnpm run test:api",
+    "test:web": "pnpm --filter web test",
+    "test:api": "uv run --directory apps/api pytest",
+    "check": "pnpm run lint && pnpm run typecheck && pnpm run test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

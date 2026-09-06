@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "hn-frontpage",
+      "name": "Hacker News front page",
+      "kind": "hackernews",
+      "feedUrl": "https://hnrss.org/frontpage",
+      "enabled": true
+    },
+    {
+      "id": "hn-show",
+      "name": "Show HN",
+      "kind": "hackernews",
+      "feedUrl": "https://hnrss.org/show",
+      "enabled": true
+    },
+    {
+      "id": "reddit-startups",
+      "name": "r/startups (replace with your rss.app feed)",
+      "kind": "reddit",
+      "feedUrl": "https://rss.app/feeds/REPLACE_WITH_YOUR_FEED_ID.xml",
+      "enabled": true
+    },
+    {
+      "id": "x-paulg",
+      "name": "@paulg on X (replace with your rss.app feed)",
+      "kind": "twitter",
+      "feedUrl": "https://rss.app/feeds/REPLACE_WITH_YOUR_FEED_ID.xml",
+      "enabled": true
+    },
+    {
+      "id": "linkedin-yc",
+      "name": "Y Combinator on LinkedIn (replace with your rss.app feed)",
+      "kind": "linkedin",
+      "feedUrl": "https://rss.app/feeds/REPLACE_WITH_YOUR_FEED_ID.xml",
+      "enabled": true
+    }
+  ]
+}

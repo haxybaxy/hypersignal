@@ -1,0 +1,20 @@
+services:
+  api:
+    build:
+      context: ./apps/api
+    environment:
+      HYPERSIGNAL_CORS_ORIGINS: '["http://localhost:8080"]'
+      HYPERSIGNAL_LOG_LEVEL: INFO
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+    restart: unless-stopped

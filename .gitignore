@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
